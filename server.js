@@ -53,6 +53,12 @@ app.get("/bad", (req, res) => {
     });
 })
 
+app.get("/project", (req, res) => {
+    res.render("project.abs", {
+        projectMessage : "This is my portifolio"
+    });
+})
+
 app.listen(port, () => {
     console.log(`Server is up on port ${port}!`);
 });
