@@ -54,7 +54,7 @@ app.get("/bad", (req, res) => {
 })
 
 app.get("/project", (req, res) => {
-    res.render("project.abs", {
+    res.render("project.hbs", {
         projectMessage : "This is my portifolio"
     });
 })
